@@ -47,5 +47,8 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
+# Results (generated outputs — large)
+05_Results/
+
 # Logs
 *.log
