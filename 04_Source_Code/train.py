@@ -84,7 +84,7 @@ def train_model(model, train_loader, val_loader, *,
     criterion = DiceBCELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="min", factor=0.5, patience=5, verbose=True
+        optimizer, mode="min", factor=0.5, patience=5
     )
 
     history = {"train_loss": [], "val_loss": [], "train_iou": [], "val_iou": []}
